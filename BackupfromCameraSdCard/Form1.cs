@@ -151,6 +151,9 @@ namespace BackupfromCameraSdCard
                 .Where(x => File.Exists(Path.Combine(x.Name, "CAMERA_FILE_COPIER.exe")))
                           .ToList();
 
+            cboDest1.Items.Clear();
+            cboDest2.Items.Clear();
+
             if (drives.Any())
             {
 
